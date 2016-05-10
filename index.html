@@ -17,12 +17,20 @@
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
     <script>
-      System.import('app').catch(function(err){ console.error(err);  });
+      // 'app' is a package set in systemjs.config.js that calls main.js
+      System.import('app').catch(function(err){
+        console.error(err);
+      });
     </script>
   </head>
 
   <!-- 3. Display the application -->
   <body>
+    <!-- When Angular calls the bootstrap function in main.ts, it reads the
+      AppComponent metadata, finds the my-app selector, locates an element
+      tag named my-app, and loads our application between those tags.
+
+      Loading... will be displayed until the app loads -->
     <my-app>Loading...</my-app>
   </body>
 </html>

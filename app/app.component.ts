@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 // Decorator that tells Angular what template to use and how to create the component
 @Component({
   selector: 'my-app', // CSS selector that represents the component
-  template: '<h1>My First Angular 2 App</h1>' // The component's template
+  template: '<h1>My SECOND Angular 2 App</h1>' // The component's template
 })
 export class AppComponent {
   /*
